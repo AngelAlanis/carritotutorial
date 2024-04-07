@@ -18,3 +18,12 @@
 .cart-message-center {
     text-align: center;
 }
+
+.counter-button {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cart-delete-button {
+    cursor: pointer;
+}
