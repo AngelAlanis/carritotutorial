@@ -6,11 +6,7 @@ import "./Products.css"
 import React from 'react'
 
 const Products = () => {
-    const { data, cart, setCart } = useContext(dataContext)
-
-    const buyProduct = (product) => {
-        setCart([...cart, product])
-    }
+    const { data, buyProduct } = useContext(dataContext)
 
     return data.map((product) => {
         return (
@@ -18,7 +14,7 @@ const Products = () => {
                 <img src={product.img} alt="img-product-card" />
                 <h3>{product.name}</h3>
                 <h3>${product.price}</h3>
-                <button onClick={() => buyProduct(product)}>Buy</button>
+                <button onClick={() => buyProduct(product)}>Add to cart</button>
             </div>
         )
     })

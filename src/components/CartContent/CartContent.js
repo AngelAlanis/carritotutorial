@@ -10,8 +10,6 @@ const CartContent = () => {
 
   const {cart} = useContext(dataContext)
 
-  // Condition ? "" : ""
-
 return cart.length > 0 ? (
   <>
     <Navbar/>
