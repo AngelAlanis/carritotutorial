@@ -10,14 +10,14 @@ const CartContent = () => {
 
   const {cart} = useContext(dataContext)
 
+
 return cart.length > 0 ? (
   <>
     <Navbar/>
     <CartElements />
     <CartTotal />
   </>
-  ) : 
-  (
+  ) : (
     <>
     <Navbar/>
     <h2 className='cart-message-center'>Your cart is empty</h2>
